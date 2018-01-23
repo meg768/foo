@@ -15,4 +15,7 @@ const tradfri = require('node-tradfri').create({
 
 tradfri.getDevices().then((devices) => {
     console.log(devices);
-});
+})
+.catch((error) => {
+    console.log(error);
+})
